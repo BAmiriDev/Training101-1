@@ -6,7 +6,7 @@
 //a) Three plus four, times fifty-seven is less than three-hundred
 (3 + 4) * 57 < 300
 //  b) One-hundred and forty-four, divided by 12 is greater than twelve or equal to twelve
-154 / 12 >= 12
+144 / 12 >= 12
 //c) Cat is less than Dog (strings)
 "Cat" < "Dog"
 //d) Rabbit is less than Hamster (strings)
@@ -19,7 +19,7 @@
 // 2. What is the difference between a string (e.g. "I love scala already") and a print line (e.g. println ("I love scala already") )? 3. Have a play in a scala worksheet using everything we have learnt today. What is possible? What isn't? Is there anything that you have done that you think is pretty cool or that's strange?
 
 "I love Scala already" // Scala automatically treats this as a String value.
-println("I love Scala already") // Prints the string to the console without assigning or storing it in a val.
+println("I love Scala already") //returns unit:  Prints the string to the console without assigning or storing it in a val.
 //3. Have a play in a scala worksheet using everything we have learnt today. What is possible? What isn't? Is there anything that you have done that you think is pretty cool or that's strange?
 
 val play1: Int = 240/2
