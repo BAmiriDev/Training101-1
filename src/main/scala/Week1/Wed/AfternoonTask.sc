@@ -4,7 +4,7 @@ John from primary school maths is trying to buy as many watermelons as possible 
 
 
 //1)Create a value to store a number of watermelons
-val watermelons: Int = 100
+val watermelons: Int = -2
 
 //2) Use an if statement to print out appropriate messages
 if (watermelons <= 3) {

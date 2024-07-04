@@ -1,4 +1,4 @@
-package Week1.Tue
+package Tues
 
 object HelloWorld extends App {
 
