@@ -24,14 +24,15 @@ val check: List[Boolean] = numList.map {
 //David has a lot of pets. Decide what pets he has (must include at least 1 dog) and write these in a Map.
 val pets: Map[String, String] = Map(
   "bird" -> "ben",
-  "dog" -> "rocky",
+  "benny" -> "dog",
+  "rocky" -> "dog",
   "cat" -> "leo",
   "hamster" -> "nis"
 )
 //TASK 4
 //Return a List of the names of David’s dog(s).
 val dogsNames: List[String] = pets.collect {
-  case ("dog", name) => name
+  case (name, "dog") => name
 }.toList
 
 
@@ -67,7 +68,7 @@ val thirdElement = list.drop(2).head // another way of doing it, drops the first
 
 
 //all of these return are false because you cant compare set to seq
-Set(2, 2) == Seq(2, 1, 1, 1)
+Set(2, 2) == Set(2, 1, 1, 1)
 Set(3, 4) == Seq(3, 4)
 Set(5, 6) == Seq(5, 6)
 
