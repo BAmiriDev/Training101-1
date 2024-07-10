@@ -89,6 +89,7 @@ class Owl(
 
 // Dragonfly class extending Insect with additional properties
 class Dragonfly(
+
                  val name: String,
                  val age: Float,
                  val numberOfLimbs: Int,
@@ -113,14 +114,34 @@ object Sanctuary {
     println(s"You fed ${animal.name} some ${animal.dietType.eats}!")
   }
 
+  // Method trying to use `jeffTheDragonfly` before it is initialized
+  def dragonflyLifespan(): String = {
+    s"The dragonfly's lifespan is ${jeffTheDragonfly.averageLifespanRange}"
+  }
+
+
+  val result = dragonflyLifespan()
+
+
+
   val hedwigTheSnowyOwl = new Owl("Hedwig", 8, 2, "White", 150)
   val pumbaTheWarthog = new Warthog("Pumbaa", 4, "Brown", true)
   val jeffTheDragonfly = new Dragonfly("Jeff", 1, 12, 10, 1)
 
+  def owlHootsPerNight(): Unit = {
+    println(s"The owl hoots ${hedwigTheSnowyOwl.hootsPerNight} times per night.")
+  }
+
+
   feedAnimal(hedwigTheSnowyOwl)
   feedAnimal(pumbaTheWarthog)
   feedAnimal(jeffTheDragonfly)
+
+  owlHootsPerNight()
+
+
 }
+
 
 // Domesticated class extending Animal with additional properties
 abstract class Domesticated extends Animal {
@@ -129,6 +150,7 @@ abstract class Domesticated extends Animal {
 
 // Dog class extending Domesticated with additional properties
 class Dog(
+           private val legal: Boolean,
            val name: String,
            val age: Float,
            val breed: String,
@@ -140,10 +162,28 @@ class Dog(
   val conservationStatus: String = "Domesticated"
   val averageLifespanRange: (Double, Double) = (10, 15)
   val numberOfYoungRange: (Int, Int) = (1, 10)
+
+  def sit(): String = {
+    if (isTrained) {
+      s"$name sits."
+    } else {
+      s"$name is not trained to sit."
+    }
+  }
+  def printDogBreed(): String = {
+
+    s"The dog's breed is ${breed}."
+  }// Can access breed directly
+
 }
+//println(printDogBreed())
+//def printDogBreed(dog: Dog): Unit = {
+//
+////  println(s"The dog's breed is ${breed}.")
+//}// Cant access breed directly
 
 // Create instances of animals
-val Rover: Dog = new Dog("Rover", 8, "Golden Retriever", true, Omnivore)
+val Rover: Dog = new Dog(true,"Rover", 8, "Golden Retriever", true,  Omnivore)
 
 // Print details of the dog
 println(Rover.breed)
@@ -152,6 +192,8 @@ println(Rover.conservationStatus)
 println(Rover.averageLifespanRange)
 println(Rover.numberOfYoungRange)
 println(Rover.dietType.eats)
+println(Rover.sit())
+println(Rover.printDogBreed())
 
 // Method to sit
 def sit(rover: String): String = {
@@ -165,13 +207,11 @@ println(sit(""))
 
 
 
-val owl1 = new Owl("Hedwig",12,1.233f,"blue",20.8f)
+val owl1 = new Owl("julie",12,1.233f,"blue",20.8f)
 
 def remainingLifespan(age:Int): Double = {
   owl1.averageLifespanRange._2 - age
 }
 println(remainingLifespan(100))
-
-
 
 

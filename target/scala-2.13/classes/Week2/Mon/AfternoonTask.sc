@@ -32,11 +32,11 @@ def defaultVal(n: Int = 4): Seq[Int] = {
 }
 
 // Example usage:
-println(defaultVal())  // Output: Seq(3, 4, 7, 11, 18, 29, 47, 76, 123, 199)
+println(defaultVal())
 
 //EXTENSION
 //1.convert the sequence into a string? Write the code for this in infix. (Research infix.)
 // Generate the sequence
 val result = FibonacciImpure(Seq(3, 4))
-println(result.)
+println(result.mkString(", "))
 
