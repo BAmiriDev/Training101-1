@@ -56,6 +56,7 @@ val newKennel = kennel.copy("Best Pets 2024")
 //Add new animal
 val addDog = newKennel.copy("List with extra Dog",dogList :+ Dog("Buddy", "Beagle", 4))
 
+
 println(addDog)
 
 

@@ -1,10 +1,9 @@
 /**MVP*/
 //1)Three main differences between class and case class
-//Case Class: Automatically generates boilerplate or methods whereas you need to call
-//Case Class: Instances can be used in pattern matching
-//Case Class: Instances are by default immutable
+//Case Class: Automatically generates boilerplate code (e.g., equals, hashCode) while classes require manual implementation
+//Case Class: Instances can be used in pattern matching; classes need additional extractors
+//Case Class: Instances are immutable by default, while class instances are mutable unless specified
 //2)
-// this should be okay
 case class Person(name: String, age: Int, nationality: String, isStudent: Boolean)//works
 val secondPerson = Person("Carlos", 23, "Spanish", true)// works
 val firstPerson = new Person("Carlos", 23, "Spanish", true)// works but doesn't need new keyboard
@@ -27,7 +26,7 @@ val blueberryMuffin = Muffin ("blueberry", 3.50, "Mercator Bakery")
 val vanillaMuffin = Muffin("vanilla", 3.50, "Mercator Bakery")
 val anotherChocolateMuffin = Muffin("chocolate", 3.50, "Mercator Bakery")
 val oneMoreChocolateMuffin = Muffin ("Chocolate", 3.50, "Mercator Bakery")
-val finalChocolateMuffin = Muffin ("choocolate", 2.50, "MercatorBakery")
+val finalChocolateMuffin = Muffin ("chocolate", 2.50, "MercatorBakery")
 
 
 chocolateMuffin == oneMoreChocolateMuffin//false parameter is same but string is in capital letter
@@ -74,6 +73,7 @@ newPractice1.equals(newPractice2)
 newPractice1.equals(newPractice3)
 newPractice2.equals(practice3)
 newPractice3.equals(newPractice3)
+practice1.equals(practice3)
 
 /**RESEARCH*/
 //1)We discussed about ".copy", ".toString"
@@ -92,9 +92,10 @@ newPractice2.getClass
 //2)Is there difference between ".equals" and
 //"==" methods and why?
 
-//the .equals() method and the == operator is that one is a method, and the other is the operator.
-// null-safe, meaning it won't throw a NullPointerException if one of the objects is null
+// one is a method, and the other is the operator.
 //This method checks if two objects are exactly the same
+// .equals method is null-safe, meaning it won't throw a NullPointerException if one of the objects is null
+// "==" checks if two references point to the same object in memory, it means that this operator determines whether the two variables being compared refer to the exact same instance of an object.
 
 
 
