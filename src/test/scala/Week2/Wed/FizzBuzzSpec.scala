@@ -18,7 +18,11 @@ class FizzBuzzSpec extends FlatSpec {
 
   "fizzBuzz" should "if num is divisible by 5" in {
     val num = new FizzBuzz
+
+    assert(num.fizzBuzz(100) == "Buzz")
+
     assert(num.fizzBuzz(10) == "Buzz")
+
   }
 
 

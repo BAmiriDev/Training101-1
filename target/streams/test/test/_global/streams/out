@@ -1,11 +1,30 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(Week2.Wed.TwoNumbersSpec, org.scalatest.tools.Framework$$anon$1@7aa276b5, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(Week2.Wed.FizzBuzzSpec, org.scalatest.tools.Framework$$anon$1@3ed09d3c, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(Week2.Wed.TwoNumbersSpec, org.scalatest.tools.Framework$$anon$1@3ed09d3c, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mFizzBuzzSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mfizzBuzz[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should if numb is divisible by both 3 and 5, will return FizzBuzz[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mfizzBuzz[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should if num is divisible by 3 will return Fizz[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mfizzBuzz[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should if num is divisible by 5[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mTwoNumbersSpec:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32madd[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should add number[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 88 milliseconds.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 1[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 1, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32msubtract[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should subtract number[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mmultiply[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should multiply number[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mdivide[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should divide numbers[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32misAMultiple[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should number is a multiple[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32misntAMultiple[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should number isnt a multiple[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 92 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 9[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 2, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 9, failed 0, canceled 0, ignored 0, pending 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Week2.Wed.TwoNumbersSpec[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Week2.Wed.FizzBuzzSpec[0m
