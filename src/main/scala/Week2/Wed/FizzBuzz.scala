@@ -12,5 +12,4 @@ class FizzBuzz {
       "404"
     }
   }
-
 }
