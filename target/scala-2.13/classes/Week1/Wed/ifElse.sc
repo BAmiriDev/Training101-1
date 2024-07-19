@@ -9,10 +9,9 @@ val season: String = "winter"
 
 if (weather == "cold") {
   println("take a coat")
-
-}  else if(weather == "rain"){
+} else if (weather == "rain") {
   println("take an umbrella")
-}else {
+} else {
   println(s"$weather is an error")
 }
 
@@ -38,6 +37,6 @@ if (percentage >= 90 && percentage <= 100) {
 val agelimit: Int = 12
 val filmrating: String = "_"
 
-if(agelimit <= 4 ){
+if (agelimit <= 4) {
   println("U")
 }
