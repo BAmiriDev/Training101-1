@@ -1,29 +1,23 @@
 package Week2.Wed
 
-import org.scalatest.FlatSpec
+import org.scalatest.flatspec.AnyFlatSpec
 
-class FizzBuzzSpec extends FlatSpec {
+class FizzBuzzSpec extends AnyFlatSpec {
 
-
-
-  "fizzBuzz" should "if numb is divisible by both 3 and 5, will return FizzBuzz" in {
+  "fizzBuzz" should "return FizzBuzz if num is divisible by both 3 and 5" in {
     val num = new FizzBuzz
     assert(num.fizzBuzz(15) == "FizzBuzz")
   }
 
-  "fizzBuzz" should "if num is divisible by 3 will return Fizz" in {
+  it should "return Fizz if num is divisible by 3" in {
     val num = new FizzBuzz()
     assert(num.fizzBuzz(9) == "Fizz")
   }
 
-  "fizzBuzz" should "if num is divisible by 5" in {
+  it should "return Buzz if num is divisible by 5" in {
     val num = new FizzBuzz
-
     assert(num.fizzBuzz(100) == "Buzz")
-
     assert(num.fizzBuzz(10) == "Buzz")
-
   }
-
 
 }
