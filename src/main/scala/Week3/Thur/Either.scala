@@ -1,6 +1,11 @@
 package Week3.Thur
 
 import java.time.LocalDate
+import java.util.concurrent.TimeUnit
+import scala.concurrent.{Await, Future}
+import scala.concurrent.ExecutionContext.Implicits.global
+import scala.concurrent.duration.{Duration, FiniteDuration}
+
 
 object Either extends App {
 
@@ -9,6 +14,7 @@ object Either extends App {
 
   def isEven(x: Int): Either[String, String] =
     if (x % 2 == 0) Right(s"$x is even") else Left(s"$x is odd")
+
 
   println(isEven(4))
   println(isEven(7))
@@ -22,6 +28,10 @@ object Either extends App {
 
   println(isOdd(4)) // error
   println(isOdd(7)) // right
+
+
+
+
 
   /** Try/Catch */
   def plusOne(x: String): Either[String, Int] = {
@@ -90,5 +100,9 @@ object Either extends App {
   println(validatedUser(passwordBad))
   println(validatedUser(dobBad))
   println(validatedUser(gooduser))
+
+
+
+
 
 }
