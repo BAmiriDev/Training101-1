@@ -20,9 +20,16 @@ case object Extension extends App {
   val eventualLetterOrError = fetchLetterOrError("Test Name"," Test Postcode")
 
   //3. Similar to before, use the value method and match off the cases
+
+//  eventualLetterOrError match {
+//    case ??? => println("","")
+//
+//  }
+
   eventualLetterOrError match {
     case ??? => println("","")
 
   }
+
 }
 
